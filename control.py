@@ -11,7 +11,7 @@ def put_light_state(on, sat, bri, hue):
 
     try:
         req = requests.put(
-            "http://10.0.4.142/api/-JgSQx-ZZV3uPsBi7xPzv3CI5K2XOAXHbnI7wg2R/lights/4/state",
+            "http://10.0.3.200/api/-JgSQx-ZZV3uPsBi7xPzv3CI5K2XOAXHbnI7wg2R/lights/4/state",
             data = json.dumps({
                 "on": on,
                 "sat": sat,
@@ -20,7 +20,7 @@ def put_light_state(on, sat, bri, hue):
             })
         )
         req = requests.put(
-            "http://10.0.4.142/api/-JgSQx-ZZV3uPsBi7xPzv3CI5K2XOAXHbnI7wg2R/lights/3/state",
+            "http://10.0.3.200/api/-JgSQx-ZZV3uPsBi7xPzv3CI5K2XOAXHbnI7wg2R/lights/3/state",
             data = json.dumps({
                 "on": on,
                 "sat": sat,
